@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="estilo.css" media="screen" />
+    <h1>Clique no botão até 10000</h1>
+    <h1> Você clicou <span id="display">0</span> vezes </h1>
+</head>
+
+<body>
+    <button class="button button1" id="btn">O BOTÃO</button>
+    <script type="text/javascript">
+        var count = 0;
+        var btn = document.getElementById("btn");
+        var disp = document.getElementById("display");
+
+        btn.onclick = function () {
+            count++;
+            disp.innerHTML = count;
+            if (count == 10000) { alert("Parabéns, você perdeu tempo!") }
+        }
+
+    </script>
+</body>
+
+</html>
